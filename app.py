@@ -1,6 +1,10 @@
 import streamlit as st
 import math
-!pip install scipy
+import subprocess
+
+# Install scipy
+
+subprocess.check_call(["pip", "install", "scipy"])
 from scipy.stats import norm
 
 def calculate_p_value(control_visitors, control_conversions, treatment_visitors, treatment_conversions, confidence_level):
