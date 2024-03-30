@@ -1,6 +1,6 @@
 import streamlit as st
 import math
-import scipy
+!pip install scipy
 from scipy.stats import norm
 
 def calculate_p_value(control_visitors, control_conversions, treatment_visitors, treatment_conversions, confidence_level):
